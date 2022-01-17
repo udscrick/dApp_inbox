@@ -13,6 +13,10 @@ const source = fs.readFileSync(inboxPath,'utf8') //Get source code from the sol 
 
 module.exports = solc.compile(source,1).contracts[':Inbox']; //2nd arg is no. of contracts we are trying to compile
 
+//Why do we have :Inbox and not Inbox
+// This is beacause in this case we have directly given the source code. However, if in case we had given a path to a file that contained the contract source code
+//Then it would have been 'Filewithcontract:Inbox' instead of ':Inbox'
+
 // console.log(solc.compile(source,1)) //View the compiled output
 
 
