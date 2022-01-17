@@ -56,6 +56,8 @@ describe('Inbox',()=>{
 })
 
 
+//Infura endpoint: https://rinkeby.infura.io/v3/7d6907ac88884292876bc0495740870d
+
 //Mocha Test sample
 // class Car{
 //     park(){
