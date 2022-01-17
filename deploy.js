@@ -9,6 +9,7 @@ const provider = new HDWalletProvider(
     mnemonicInfo['metamaskMnemonic'],
     "https://rinkeby.infura.io/v3/7d6907ac88884292876bc0495740870d"
 );
+//Wherever possible try to use infura, there are also other vm tools like geth an parity that can help us acheive the same, but it is not easy to set up
 
 const web3 = new Web3(provider);
 
